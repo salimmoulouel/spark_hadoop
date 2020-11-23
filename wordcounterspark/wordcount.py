@@ -12,5 +12,5 @@ for (word, count) in word_counts:
     print(word, count)
 
 #apply the following command on spark and replace 4 with the number of nodes you want to be parallelised
-# spark-3.0.1-bin-hadoop2.7/bin/spark-submit --master local[4] ./wordcount.py ./iliad100.txt  
+# PYSPARK_PYTHON=ipython spark-3.0.1-bin-hadoop2.7/bin/spark-submit --master local[4] ./wordcount.py ./iliad100.txt  
 
