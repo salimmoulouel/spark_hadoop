@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Tue Nov 24 12:16:34 CET 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0175-f9f8-33b7-000002b0c830 
+on database directory /home/sparkuser/code/wordcounterspark/word_population_study/metastore_db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@14dad5dc 
+Loaded from file:/home/sparkuser/code/spark-3.0.1-bin-hadoop2.7/jars/derby-10.12.1.1.jar
+java.vendor=Ubuntu
+java.runtime.version=11.0.9.1+1-Ubuntu-0ubuntu1.20.04
+user.dir=/home/sparkuser/code/wordcounterspark/word_population_study
+os.name=Linux
+os.arch=amd64
+os.version=5.4.0-54-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

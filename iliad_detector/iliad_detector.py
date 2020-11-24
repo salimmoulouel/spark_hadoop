@@ -17,7 +17,9 @@ spark = SparkSession.builder. \
       master("local") \
       .appName("spark session example") \
       .getOrCreate()
-      
+ 
+
+
 iliad = sc.textFile("iliad.mb.txt"). \
 map(lambda line : line.split()). \
 map(lambda words: [w.strip(',.;:?!-"') for w in words])
@@ -46,5 +48,12 @@ classifier = pyspark.ml.classification.NaiveBayes(labelCol="label", featuresCol=
 predicted = classifier.transform(test)
 accuracy = predicted.filter(predicted.label_predicted == predicted.label).count() / float(predicted.count())
 print("accuracy {}".format(accuracy))
+
+
+# with shell download iliad and odyssey
+# wget http://classics.mit.edu/Homer/iliad.mb.txt      
+# wget http://classics.mit.edu/Homer/odyssey.mb.txt
+
+ 
 
 #PYSPARK_PYTHON=python3 $SPARK_HOME/bin/spark-submit --master local[4] ./iliad_detector.py 
